@@ -1,0 +1,270 @@
+/* ========================= */
+/* Global Styles */
+/* ========================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ========================= */
+/* Navbar Styles */
+/* ========================= */
+.navbar {
+  background: #1a1a2e;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* ========================= */
+/* Home Page (Blog List) */
+/* ========================= */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.blog-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item h3 {
+  color: #1a1a2e;
+}
+
+.blog-item p {
+  color: #666;
+}
+
+.read-more {
+  display: inline-block;
+  background: #1a1a2e;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+/* ========================= */
+/* Blog Page (Single Blog) */
+/* ========================= */
+.blog-container {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-container h2 {
+  color: #1a1a2e;
+}
+
+/* ========================= */
+/* Login & Register Forms */
+/* ========================= */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  background: #1a1a2e;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.form-container button:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+/* ========================= */
+/* Responsive Design */
+/* ========================= */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .blog-list {
+      padding: 10px;
+  }
+
+  .form-container {
+      width: 90%;
+  }
+}
+
+
+/* ========================= */
+/* Login & Register Form Styles */
+/* ========================= */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+.auth-box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+  color: #1a1a2e;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.auth-box button {
+  width: 100%;
+  background: #1a1a2e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.auth-box button:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+.auth-box p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.auth-box a {
+  color: #1a1a2e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-box a:hover {
+  color: #ffcc00;
+}
+
+
+.create-blog-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.create-blog-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.create-blog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-blog-form input,
+.create-blog-form textarea {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: none;
+  font-family: inherit;
+}
+
+.create-blog-form input:focus,
+.create-blog-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+.create-blog-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-blog-form button:hover {
+  background-color: #0056b3;
+}
