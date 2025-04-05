@@ -42,7 +42,7 @@ function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://blog2-z877.vercel.app/api/auth/register', { username, email, password }, {withCredentials: true});
+      const response = await axios.post('https://blog2-2.onrender.com/api/auth/register', { username, email, password }, {withCredentials: true});
       console.log(response.data);
       navigate('/login');
     } catch (error) {
