@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 
 app.use(cors({
   origin: "https://blog2-green-nine.vercel.app",
-  methods: ["GET", "POST", "DELETE", "UPDATE", "PUT"], // or your frontend domain
+  // methods: ["GET", "POST", "DELETE", "UPDATE", "PUT"], // or your frontend domain
   credentials: true
 }));
 
