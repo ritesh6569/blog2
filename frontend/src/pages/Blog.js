@@ -7,7 +7,7 @@ function Blog() {
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/blogs/${id}`)
+    axios.get(`https://blog2-z877.vercel.app/api/blogs/${id}`)
       .then(response => setBlog(response.data))
       .catch(error => console.log(error));
   }, [id]);

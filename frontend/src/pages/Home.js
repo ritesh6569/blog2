@@ -6,7 +6,7 @@ function Home() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/blogs')
+    axios.get('https://blog2-z877.vercel.app/api/blogs')
       .then(response => setBlogs(response.data))
       .catch(error => console.log(error));
   }, []);
