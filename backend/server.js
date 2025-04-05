@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: 'https://blog2-green-nine.vercel.app',
+  origin: "https://blog2-green-nine.vercel.app",
   methods: ["GET", "POST", "DELETE", "UPDATE", "PUT"], // or your frontend domain
   credentials: true
 }));
