@@ -10,7 +10,9 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://blog2-green-nine.vercel.app' // or your frontend domain
+}));
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
