@@ -39,7 +39,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://blog2-z877.vercel.app/api/auth/login', { email, password });
+      const response = await axios.post('https://blog2-2.onrender.com/api/auth/login', { email, password });
       console.log(response.data);
     } catch (error) {
       console.error('Login failed:', error);

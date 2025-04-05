@@ -14,7 +14,7 @@ function CreateBlog() {
 
     try {
       const response = await axios.post(
-        'https://blog2-z877.vercel.app/api/blogs',
+        'https://blog2-2.onrender.com/api/blogs',
         { title, content },
         {
           headers: {
